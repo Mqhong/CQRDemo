@@ -51,9 +51,7 @@
     [super viewDidLoad];
     self.navigationItem.title = @"生成二维码";
     self.view.backgroundColor = [UIColor whiteColor];
-    
     [self.view addSubview:self.imageview];
-    
     self.textfield.frame = CGRectMake(20, 64+10, [UIScreen mainScreen].bounds.size.width-40, 44);
     [self.view addSubview:self.textfield];
     CGFloat btnw = [UIScreen mainScreen].bounds.size.width * 0.6;
@@ -63,7 +61,6 @@
     [self.view addSubview:self.btn];
     [self.btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
 }
-
 
 -(void)btnClick{
     if (self.textfield.text.length ==0 ) {
